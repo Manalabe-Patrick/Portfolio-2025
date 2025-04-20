@@ -4,4 +4,4 @@ This is my personal developer portfolio showcasing my skills, projects, and expe
 
 ## 🖥️ Live Demo
 
-🔗 [View Portfolio](https://pat-portfolio-2025.vercel.app/projects)  
+🔗 [View Portfolio](https://pat-portfolio-2025.vercel.app)  
