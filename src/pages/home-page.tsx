@@ -85,24 +85,26 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="md:grid grid-cols-5 gap-4 mt-4">
-              <div className="col-span-3 border border-2px border-white/30 rounded-md p-6 px-10 bg-gradient-to-b from-slate-50/0 to-black/60 bg-white/3 cursor-pointer hover:bg-white/10">
-                <h6 className="font-medium text-md">My Resume</h6>
-                <p className="text-white/70 text-sm font-light flex gap-2 items-center mt-2">
-                  <Download size={42} />
-                  Peek under the hood, view my resume for the full breakdown.
-                </p>
-              </div>
-              <div className="mt-4 md:mt-0 col-span-2 border border-2px border-white/30 rounded-md p-6 px-10 bg-gradient-to-b from-slate-50/0 to-black/60 bg-white/3">
-                <h6 className="font-medium text-lg">Connect</h6>
-                <p className="text-white/70 text-sm font-light">
-                  Let's connect and build something great together.
-                </p>
-                <div className="w-16 flex gap-4 my-2">
-                  <SocMed />
+            <a href="/Patrick_Manalabe_soft-eng-resume.pdf" target="_blank">
+              <div className="md:grid grid-cols-5 gap-4 mt-4">
+                <div className="col-span-3 border border-2px border-white/30 rounded-md p-6 px-10 bg-gradient-to-b from-slate-50/0 to-black/60 bg-white/3 cursor-pointer hover:bg-white/10">
+                  <h6 className="font-medium text-md">My Resume</h6>
+                  <p className="text-white/70 text-sm font-light flex gap-2 items-center mt-2">
+                    <Download size={42} />
+                    Peek under the hood, view my resume for the full breakdown.
+                  </p>
+                </div>
+                <div className="mt-4 md:mt-0 col-span-2 border border-2px border-white/30 rounded-md p-6 px-10 bg-gradient-to-b from-slate-50/0 to-black/60 bg-white/3">
+                  <h6 className="font-medium text-lg">Connect</h6>
+                  <p className="text-white/70 text-sm font-light">
+                    Let's connect and build something great together.
+                  </p>
+                  <div className="w-16 flex gap-4 my-2">
+                    <SocMed />
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
             <div className="flex justify-center mt-10">
               <Link to={"/about-me"}>
                 <Button text=" Learn more about me" />

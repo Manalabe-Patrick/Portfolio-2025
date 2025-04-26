@@ -53,7 +53,7 @@ const Experiences: Experience[] = [
   {
     company: "Giolosts Technologies",
     title: "Software Engineer Intern",
-    duration: "Feb 2022 - Jul 2022",
+    duration: "Mar 2022 - Jun 2022",
     experience: [
       "Designed and developed dynamic, responsive websites using React.js.",
       "Collaborated with cross-functional teams through project management tools like Microsoft Teams and Jira.",
