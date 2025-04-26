@@ -1,11 +1,12 @@
 import Badge from "./ui/badge";
 import Button from "./ui/button";
 
-interface ProjectCardProps {
+export interface ProjectCardProps {
   title: string;
   description: string;
   badges: string[];
   link: string;
+  img: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -13,6 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   badges,
   link,
+  img,
 }) => {
   return (
     <div className="grid grid-cols-7 border gap-6 border-2px border-white/30 rounded-md p-2 my-4 hover:bg-white/3 cursor-pointer">
@@ -20,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <img
           className="w-50 md:w-80 lg:w-full mx-auto"
           alt="project img"
-          src="/taletype.png"
+          src={img}
         ></img>
       </div>
       <div className="col-span-7 lg:col-span-5 px-10 py-4">

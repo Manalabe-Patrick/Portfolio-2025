@@ -2,8 +2,45 @@ import { motion } from "framer-motion";
 import Background from "../components/background";
 import NavMenu from "../components/nav-menu";
 import Footer from "../components/footer";
-import ProjectCard from "../components/project-card";
+import ProjectCard, { ProjectCardProps } from "../components/project-card";
 import ScrollToTop from "../components/utils/scroll-on-top";
+
+const projects: ProjectCardProps[] = [
+  {
+    title: "TaleType",
+    description:
+      "TaleType is a real-time chat app with a game-like style. It uses Node.js and MongoDB on the backend and has a modern look on the front. Users can enjoy fun, role-playing chats that feel like a game.",
+    badges: [
+      "ReactJs",
+      "NodeJs",
+      "TailwindCSS",
+      "Typescript",
+      "MongoDB",
+      "DaisyUI",
+      "Vite",
+      "Zustand",
+    ],
+    link: "https://github.com/Manalabe-Patrick/taletype",
+    img: "/taletype.png",
+  },
+  {
+    title: "Minimal API in .NET 8",
+    description:
+      "This project is a simple demonstration of how to use Minimal APIs in .NET 8. It showcases the basics of setting up endpoints, handling requests, and building lightweight web applications with minimal configuration.",
+    badges: [
+      "rest api",
+      "minimal api",
+      "Asp.NET CORE 8.0",
+      "C#",
+      "sql server",
+      "EF core",
+      "code first migration",
+      "api key authentication",
+    ],
+    link: "https://github.com/Manalabe-Patrick/MinimalApi-Net8-SqlServer-EFCore",
+    img: "/api_proj.png",
+  },
+];
 
 const ProjectsPage = () => {
   return (
@@ -32,24 +69,16 @@ const ProjectsPage = () => {
           </section>
           <hr className="text-white/30 my-4" />
           <section>
-            <ProjectCard
-              title="TaleType"
-              description=" TaleType is a real-time chat app with a game-like style. It
-                  uses Node.js and MongoDB on the backend and has a modern look
-                  on the front. Users can enjoy fun, role-playing chats that
-                  feel like a game."
-              badges={[
-                "ReactJs",
-                "NodeJs",
-                "TailwindCSS",
-                "Typescript",
-                "MongoDB",
-                "DaisyUI",
-                "Vite",
-                "Zustand",
-              ]}
-              link={"https://github.com/Manalabe-Patrick/taletype"}
-            />
+            {projects.map((project: ProjectCardProps, i: number) => (
+              <ProjectCard
+                key={i}
+                title={project.title}
+                description={project.description}
+                badges={project.badges}
+                link={project.link}
+                img={project.img}
+              />
+            ))}
           </section>
         </motion.div>
       </div>
