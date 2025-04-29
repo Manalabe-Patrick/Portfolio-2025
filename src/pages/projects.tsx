@@ -7,7 +7,24 @@ import ScrollToTop from "../components/utils/scroll-on-top";
 
 const projects: ProjectCardProps[] = [
   {
-    title: "TaleType",
+    title: "Body Blueprint AI (Next.Js + Vapi AI + Convex + Clerk auth)",
+    description:
+      "Body Blueprint AI builds custom gym plans for your goals fat loss, muscle gain, or fitness and tracks your progress.",
+    badges: [
+      "SaaS",
+      "NextJS",
+      "Clerk",
+      "Vapi.ai",
+      "Convex",
+      "Typescript",
+      "Shadcn",
+      "tailwind",
+    ],
+    link: "https://github.com/Manalabe-Patrick/body-blueprint-ai/tree/main",
+    img: "/blueprint_ai.png",
+  },
+  {
+    title: "TaleType (MERN Stack)",
     description:
       "TaleType is a real-time chat app with a game-like style. It uses Node.js and MongoDB on the backend and has a modern look on the front. Users can enjoy fun, role-playing chats that feel like a game.",
     badges: [
@@ -24,7 +41,7 @@ const projects: ProjectCardProps[] = [
     img: "/taletype.png",
   },
   {
-    title: "Minimal API in .NET 8",
+    title: "Minimal API in ASP.NET 8",
     description:
       "This project is a simple demonstration of how to use Minimal APIs in .NET 8. It showcases the basics of setting up endpoints, handling requests, and building lightweight web applications with minimal configuration.",
     badges: [
